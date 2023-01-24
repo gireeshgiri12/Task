@@ -2,16 +2,14 @@
   "name": "task",
   "version": "1.0.0",
   "description": "BUILDING APP FOR TASK",
-  "main": "index.js",
+  "main": "src/mainRoutes.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev" : "node src/mainRoutes.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^1.1.2",
-    "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.1",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
