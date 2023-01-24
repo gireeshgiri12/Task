@@ -67,7 +67,7 @@ mainRoute.post('/create', async (req, res) => {
 
 mainRoute.put('/clients/:clientId', async (req, res) => {
   try {
-    const data = await AgencyDetails.findOne({ _id: req.params.clientId })
+    const data = await clientDetails.findOne({ _id: req.params.clientId })
     if (data) {
       await clientDetails.findByIdAndUpdate(req.params.clientId, req.body)
       const updatedClient = await clientDetails.findById(req.params.clientId)
